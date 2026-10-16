@@ -735,8 +735,8 @@ class Gizmos:
         """
         imgui.set_next_window_size(200.0,100.0)
         imgui.begin("Selected Entity")
-        imgui.text_ansi(self.selected_comp)
-        imgui.text_ansi("Mode: "+self.mode.value)
+        imgui.text(self.selected_comp)
+        imgui.text("Mode: "+self.mode.value)
         imgui.end()
 
     def update_projection(self, Proj):
